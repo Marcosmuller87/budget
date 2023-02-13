@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  url(./assets/budget.jpg) no-repeat center fixed;
+  font-family: 'Itim', cursive, sans-serif;
+}
+
+.badge-error {
+  font-size: large;
+}
+

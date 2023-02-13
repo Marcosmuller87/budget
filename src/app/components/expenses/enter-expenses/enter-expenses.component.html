@@ -1,1 +1,13 @@
-<p>enter-expenses works!</p>
+<h4 class="text-center my-4">Enter Expenses</h4>
+<div class="text-center" *ngIf="invalidForm">
+  <span class="badge bg-danger badge-error">{{invalidFormMessage | uppercase}}</span>
+</div>
+<div class="form-group mb-2">
+  <label for="expense">Expense</label>
+  <input type="text" class="form-control form-control-lg" id="expense" placeholder="Ex.: Supermarket" [(ngModel)]="expenseName">
+</div>
+<div class="form-group mb-2">
+  <label for="quantity">Expense</label>
+  <input type="number" class="form-control form-control-lg" id="quantity" placeholder="Ex.: 250" [(ngModel)]="expenseAmount">
+</div>
+<button class="btn btn-secondary btn-block btn-lg" (click)="addExpense()">ADD EXPENSES</button>

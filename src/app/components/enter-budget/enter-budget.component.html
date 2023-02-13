@@ -1,1 +1,14 @@
-<p>enter-budget works!</p>
+<div class="row mt-4">
+  <div class="col-lg-6 offset-lg-3">
+    <h3 class="text-center text-white">Enter Budget</h3>
+    <div class="card">
+      <div class="card-body">
+        <div *ngIf="invalidQuantity" class="text-center mb-2">
+          <span class="badge bg-danger badge-error">BUDGET MUST BE ABOVE ZERO</span>
+        </div>
+        <input type="number" [(ngModel)]="quantity" class="form-control form-control-lg" placeholder="Enter your budget">
+        <button class="btn btn-secondary btn-lg btn-block mt-2" (click)="addQuantity()">ENTER</button>
+      </div>
+    </div>
+  </div>
+</div>
